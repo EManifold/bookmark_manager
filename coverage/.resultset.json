@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/adding_bookmarks_spec.rb": [
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmark-manager-friday/bookmark_manager/spec/features/adding_bookmarks_spec.rb": [
         1,
         1,
         1,
@@ -14,7 +14,7 @@
         null,
         null
       ],
-      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/button_homepage_spec.rb": [
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmark-manager-friday/bookmark_manager/spec/features/button_homepage_spec.rb": [
         1,
         1,
         1,
@@ -23,7 +23,7 @@
         null,
         null
       ],
-      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/click_title_url_spec.rb": [
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmark-manager-friday/bookmark_manager/spec/features/click_title_url_spec.rb": [
         1,
         1,
         null,
@@ -38,7 +38,7 @@
         null,
         null
       ],
-      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/hello_world_spec.rb": [
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmark-manager-friday/bookmark_manager/spec/features/hello_world_spec.rb": [
         1,
         1,
         1,
@@ -46,7 +46,7 @@
         null,
         null
       ],
-      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": [
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmark-manager-friday/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": [
         null,
         1,
         1,
@@ -60,11 +60,11 @@
         1,
         1,
         1,
-        null,
         null,
         null
       ],
-      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/unit/bookmark_spec.rb": [
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmark-manager-friday/bookmark_manager/spec/unit/bookmark_spec.rb": [
+        1,
         1,
         1,
         null,
@@ -81,32 +81,47 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         1,
         1,
         1,
         null,
+        null,
         1,
         null,
         1,
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmark-manager-friday/bookmark_manager/spec/database_helpers.rb": [
+        1,
+        null,
         1,
         0,
         0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
+        0,
         null
       ]
     },
-    "timestamp": 1575626873
+    "timestamp": 1575629319
   }
 }

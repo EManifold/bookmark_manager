@@ -1,5 +1,6 @@
 require 'bookmark'
 require 'pg'
+require 'database_helpers'
 
 describe Bookmark do
   let(:con) { PG.connect test_database }
@@ -8,13 +9,13 @@ describe Bookmark do
   describe '.all' do
     it 'makes a query to retrieve all the urls' do
       expect(con).to receive(:exec).with('SELECT * FROM bookmarks')
-      p con.exec 'SELECT * FROM bookmarks'
+      con.exec 'SELECT * FROM bookmarks'
       Bookmark.all
     end
   end
 
     it 'returns all bookmarks' do
-
+      connection = PG.connect(dbname: 'bookmark_manager_test')
       bookmark = Bookmark.create(url: "https://www.google.com", title: "Google")
       Bookmark.create(url: "https://www.destroyallsoftware.com", title: "Destroy Software")
       Bookmark.create(url: "https://www.makersacademy.com", title: "Makers")
@@ -30,10 +31,16 @@ describe Bookmark do
 
   describe '.create' do
     it 'creates a new bookmark' do
-     bookmark = Bookmark.create(url: 'www.google.com', title: 'Google').first
+     bookmark = Bookmark.create(url: 'https://www.google.com', title: 'Google')
+     # persisted_data =  persisted_data(id: bookmark.id)
 
-     expect(bookmark['url']).to eq 'www.google.com'
-     expect(bookmark['title']).to eq 'Google'
+     expect(bookmark).to be_a Bookmark
+     # expect(bookmark.id).to eq persisted_data.first['id']
+     expect(bookmark.title).to eq 'Google'
+     expect(bookmark.url).to eq 'https://www.google.com'
+
+     # expect(bookmark['url']).to eq 'https://www.google.com'
+     # expect(bookmark['title']).to eq 'Google'
    end
   end
 

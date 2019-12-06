@@ -11,6 +11,5 @@ feature 'Viewing bookmarks' do
     expect(page).to have_link("Makers", href: 'https://www.makersacademy.com')
     expect(page).to have_link("Destroy Software", href: 'https://www.destroyallsoftware.com')
     expect(page).to have_link("Google", href: 'https://www.google.com')
-
   end
 end
