@@ -25,4 +25,7 @@ class Bookmark
     @url = url
     con.exec("INSERT INTO bookmarks (url, title) VALUES('#{url}', '#{title}') RETURNING id, url, title;")
   end
+
+  def test 
+  end
 end
